@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    display:grid;
+    place-content:center;
+    min-height:100vh;
+    font-family:'Outfit', sans-serif;
+    background-color:hsl(217, 54%, 11%)
+}
+
+.card{
+    max-width:22em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.3em;
+    padding:5%;
+    margin:4%;
+    background-color:hsl(216, 50%, 16%);
+    overflow:hidden;
+    border-radius:10px
+}
+
+.img-section img{
+    width:100%;
+    border-radius:10px;
+    
+}
+.img-section{
+    position:relative;
+    float:left;
+}
+
+.img-section div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: hsl(178, 100%, 50%);
+    color: white;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.75s linear; 
+    transition: visibility 0s, opacity 0.75s linear;
+}
+
+.img-section:hover img{
+    cursor:pointer;
+}
+
+.img-section:hover div{
+    width:100%;
+    padding:6em;
+    visibility: visible;
+    opacity: .7;
+    border-radius:10px;
+}
+
+.card-body{
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+
+.header{
+    color:white;
+    font-size:1.5rem;
+    font-weight:600;
+    transition: color .25s linear;
+}
+
+.header:hover{
+    color:hsl(178, 100%, 50%);
+    cursor:pointer;
+
+}
+
+.text{
+    font: size 15px;
+    color:hsl(215, 51%, 70%);
+    font-weight:300;
+    line-height:1.5;
+}
+
+.details{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.numbers, .days-left{
+    display:flex;
+    gap:.4em;
+}
+
+.numbers h1{
+    font-size:18px;
+    font-weight:600;
+    color:hsl(178, 100%, 50%);
+}
+
+.days-left p{
+    font-size:16px;
+    font-weight:500;
+    color:hsl(215, 51%, 70%);
+
+}
+
+hr{
+    opacity:.3;
+}
+
+.creator{
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap:.7em;
+}
+
+.creator img{
+    width:40px;
+    border:1px solid white;
+    border-radius:50%;
+}
+
+.creator-text{
+    font-size:15px;
+    color:hsl(215, 51%, 70%);
+    font-weight:300;
+}
+
+.creator-text span{
+    font-weight:500;
+    color:white;
+        transition: color .25s linear;
+
+}
+
+.creator-text span:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
+
